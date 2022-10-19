@@ -8,4 +8,6 @@
     <string name="pc_contact">PC Sécurité</string>
     <string name="name_pc_contact">PC Sécurité</string>
     <string name="email_pc_contact">pcwashington@orange.fr</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
