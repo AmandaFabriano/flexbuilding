@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/contacts"
+        style="@style/DefaultTitleTextStyle"
+        android:letterSpacing= ".006"
+        android:layout_width="171dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="207dp"
+        android:layout_marginEnd="194dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/title_page"
+        android:fontFamily="@font/bold"
+        app:layout_constraintBottom_toTopOf="@+id/buildingmanager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+
+        android:id="@+id/buildingmanager"
+        style="@style/DefaultTitle1Style"
+        android:letterSpacing= ".0043"
+        android:layout_width="121dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/medium"
+        android:text="@string/first_contact"
+        app:layout_constraintBottom_toTopOf="@+id/email_immobilier"
+        app:layout_constraintEnd_toStartOf="@+id/manager"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/manager"
+        style="@style/DefaultTitle1Style"
+        android:layout_width="174dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="191dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/name_first_contact"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/email_immobilier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buildingmanager" />
+
+    <TextView
+
+        android:id="@+id/email_immobilier"
+        style="@style/DefaultText2Style"
+        android:letterSpacing= ".0043"
+        android:layout_width="297dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/email"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+
+
+        android:id="@+id/textView4"
+        style="@style/DefaultTitle1Style"
+        android:letterSpacing= ".0043"
+        android:layout_width="82dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/medium"
+        android:text="@string/pc_contact"
+        app:layout_constraintBottom_toTopOf="@+id/pc_sécurité_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/pc_sécurité_textview"
+        style="@style/DefaultTitle1Style"
+        android:letterSpacing= ".0043"
+        android:layout_width="81dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="284dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/pc_contact"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/email_pc_securité_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+
+        android:id="@+id/email_pc_securité_textview"
+        style="@style/DefaultText2Style"
+        android:letterSpacing= ".0043"
+        android:layout_width="175dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="23dp"
+        android:text="@string/email_pc_contact"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/services"
+        android:letterSpacing= ".006"
+        style="@style/DefaultTitleTextStyle"
+        android:layout_width="282dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/services"
+        android:fontFamily="@font/bold"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_pc_securité_textview" />
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="19dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="346dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/telephone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="@+id/buildingmanager"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="19dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="346dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="46dp"
+        android:src="@drawable/telephone"
+        app:layout_constraintBottom_toBottomOf="@+id/email_pc_securité_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="407dp"
+        android:layout_height="182dp"
+        android:layout_marginStart="-1dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/washigtonhome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_marginStart="-1dp"
+        tools:layout_marginTop="0dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_container"
+        android:layout_width="356dp"
+        android:layout_height="487dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/services" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
