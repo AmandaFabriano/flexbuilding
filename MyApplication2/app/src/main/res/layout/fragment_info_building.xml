@@ -15,7 +15,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        style="@style/DefaultText3Style"
+        style="@style/DefaultSmallGreyStyle"
         android:textStyle="normal"/>
 
 
