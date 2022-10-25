@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="412dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="1dp"
+        android:accessibilityLiveRegion="none"
+        android:letterSpacing=".0800"
+        android:scaleType="centerCrop"
+        android:src="@drawable/restauration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="69dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/arpege"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/information"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        style="@style/DefaultTitleTextStyle1"
+        android:layout_width="187dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="70dp"
+        android:fontFamily="@font/medium"
+        android:letterSpacing=".0080"
+        android:text="@string/title_restauration"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/information"
+        style="@style/DefaultTitleTextStyle"
+        android:layout_width="176dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="210dp"
+        android:fontFamily="@font/bold"
+        android:letterSpacing=".0060"
+        android:text="@string/information"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/intro"
+        style="@style/DefaultTextStyle"
+        android:layout_width="346dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="25dp"
+        android:letterSpacing=".0043"
+        android:text="@string/intro_restauration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/information" />
+
+    <TextView
+        android:id="@+id/galerie"
+        style="@style/DefaultTitleTextStyle"
+        android:layout_width="104dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="293dp"
+        android:fontFamily="@font/bold"
+        android:letterSpacing=".0060"
+        android:text="@string/galerie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intro" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/carrousel"
+        android:layout_width="165dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="33dp"
+        app:layout_constraintBottom_toTopOf="@+id/horaires"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/galerie"
+        android:orientation="horizontal"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/date"
+        android:layout_width="363dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="33dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horaires"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <TextView
+        android:id="@+id/horaires"
+        style="@style/DefaultTitleTextStyle"
+        android:layout_width="117dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="277dp"
+        android:layout_marginEnd="279dp"
+        android:fontFamily="@font/bold"
+        android:letterSpacing=".0060"
+        android:text="@string/horaires"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/information" />
+
+    <TextView
+        android:id="@+id/contact"
+        style="@style/DefaultTitleTextStyle"
+        android:layout_width="117dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginEnd="279dp"
+        android:fontFamily="@font/bold"
+        android:letterSpacing=".0060"
+        android:text="@string/contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/information" />
+
+    <TextView
+
+        android:id="@+id/buildingmanager"
+        style="@style/DefaultNameStyle"
+        android:layout_width="153dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/medium"
+        android:letterSpacing=".0043"
+        android:text="@string/first_contact"
+        app:layout_constraintEnd_toStartOf="@+id/manager"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact" />
+
+    <TextView
+        android:id="@+id/manager"
+        style="@style/DefaultTextStyle"
+        android:layout_width="217dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/effra"
+        android:text="@string/name_first_contact"
+        app:layout_constraintBottom_toTopOf="@+id/email_immobilier"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buildingmanager"
+        android:letterSpacing=".0043"/>
+
+    <TextView
+        android:id="@+id/email_immobilier"
+        style="@style/DefaultGreyStyle"
+        android:layout_width="268dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="88dp"
+        android:letterSpacing=".0043"
+        android:text="@string/email"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manager" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="19dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/telephone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/buildingmanager"
+        app:layout_constraintTop_toBottomOf="@+id/contact" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

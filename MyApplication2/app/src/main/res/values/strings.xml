@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">app-name</string>
+
+    <!--Page Info Building-->
     <string name="title_page">Contacts sur site </string>
     <string name="services">Vos services à retrouver</string>
     <string name="first_contact">Building manager</string>
@@ -8,10 +10,13 @@
     <string name="pc_contact">PC Sécurité</string>
     <string name="name_pc_contact">PC Sécurité</string>
     <string name="email_pc_contact">pcwashington@orange.fr</string>
+
+    <!--Page Restauration-->
   <string name="information">Informations</string>
     <string name="intro_restauration">Le restaurant se situe au niveau R du batiment Washington Plaza.</string>
     <string name="galerie">Galerie</string>
     <string name="horaires">Horaires</string>
   <string name="contact">Contact</string>
     <string name="title_restauration">Restauration</string>
+
 </resources>
