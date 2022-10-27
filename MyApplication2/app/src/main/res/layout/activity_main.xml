@@ -173,8 +173,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="444dp"
-        android:layout_height="186dp"
+        android:layout_width="412dp"
+        android:layout_height="166dp"
         android:layout_marginStart="-1dp"
         android:accessibilityLiveRegion="none"
         android:scaleType="centerCrop"
@@ -182,7 +182,7 @@
         android:scrollbarAlwaysDrawVerticalTrack="false"
         android:src="@drawable/washigtonhome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="00"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_marginStart="-1dp"
@@ -190,15 +190,22 @@
 
     <FrameLayout
         android:id="@+id/fragment_container"
-        android:layout_width="340dp"
-        android:layout_height="487dp"
+        android:layout_width="354dp"
+        android:layout_height="103dp"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/services"
-        />
+        app:layout_constraintTop_toTopOf="@+id/services">
+
+        <ImageButton
+            android:id="@+id/open_button"
+            android:layout_width="159dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/teal_700"
+            app:srcCompat="@drawable/restauration" />
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

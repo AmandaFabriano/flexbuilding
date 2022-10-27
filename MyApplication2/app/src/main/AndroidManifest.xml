@@ -13,9 +13,17 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="32">
         <activity
+            android:name=".RestaurationActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MyApplication.NoActionBarAndStatusBar">>
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.MyApplication.NoActionBarAndStatusBar"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.MyApplication.NoActionBarAndStatusBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
